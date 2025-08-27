@@ -6,6 +6,13 @@
     <title>Emergency Hotline</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
 </head>
 <body>
@@ -16,11 +23,11 @@
         </div>
         <div class="flex justify-center items-center gap-2 lg:gap-5 ">
             <div class="flex justify-center items-center gap-[10px] bg-[#41ff6b1a] rounded-[50px] h-[52px]  px-3 lg:w-[123px]">
-                <h4>0</h4>
+                <h4 class="font-bold">0</h4>
                 <img src="./assets/heart.png" alt="" class="h-[30px] w-[30px]">
             </div>
             <div class="flex justify-center items-center gap-[10px] bg-[#41ff6b1a] rounded-[50px] h-[52px] px-3 lg:w-[106px]">
-                <h4>100</h4>
+                <h4 class="font-bold">100</h4>
                 <img src="./assets/coin.png" alt="" class="h-[24px] w-[24px]">
             </div>
             <button class="btn btn-primary border-none bg-[#00A63E] rounded-[50px] h-[52px] lg:w-[127px]"><span>0</span> Copy</button>
@@ -31,5 +38,39 @@
         <h2>জরুরি সেবা ডিরেক্টরি</h2>
         <p class="">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
     </section>
+    <section class="flex gap-7 mt-12">
+        <div class="lg:w-3/4 w-1/2 grid grid-cols-1 lg:grid-cols-3 gap-7">
+          <div class=" rounded-xl p-8  gap-4 bg-[#FFE3E2] shadow">
+            <div class="flex justify-between items-center mb-4">
+             <img src="./assets/emergency.png" alt="" class=" bg-[#FFE3E2] w-[60px] h-[60px] rounded-2xl">
+             <i class="fa-regular fa-heart heart"></i>
+            </div>
+            <div class="gap-6">
+              <div>
+                <h4 class="text-2xl font-bold ">জাতীয় জরুরি সেবা</h4>
+                <p class="text-[#5C5C5C]">National Emergency</p>
+              </div>
+              <div class="my-6">
+                <h4 class="text-2xl font-bold ">999</h4>
+                <p class=" bg-[#41ff6b1a] rounded-[50px] text-[#5C5C5C] " >সার্বজনীন</p>
+            </div>
+            <div class="gap-2 flex w-full">
+              <button class="btn btn-primary w-1/2 border-1 border-[#D4D6D5] bg-white text-[#5C5C5C] rounded-lg"> <i class="fa-regular fa-copy"></i> Copy</button>
+              <button class="btn btn-primary w-1/2 bg-[#00A63E] text-white rounded-lg border-none"><i class="fa-solid fa-phone"></i> Call</button>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+        <div class="lg:w-1/4 w-1/2 bg-white">
+         <div class="flex justify-between items-center">
+            <h5><i class="fa-regular fa-clock"></i> Call History</h5>
+            <button class="btn btn-primary border-none bg-[#00A63E] rounded-[50px] h-[52px] lg:w-[127px] ">Clear</button>
+         </div>
+        </div>
+    </section>
+
+
+    <script src="./index.js"></script>
 </body>
 </html>
