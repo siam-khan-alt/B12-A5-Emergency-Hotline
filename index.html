@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
-
+  <!-- google font link -->
 <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-
-
-
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+ <!-- tailwindcss and daisyui link -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ <!-- font-awesome link -->
  <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -21,17 +19,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- inline CSS style block for font-family -->
     <style>
    .hind-madurai {font-family: "Hind Madurai", sans-serif;}
    .roboto {font-family: "Roboto", sans-serif;}
    .inter {font-family: "Inter", sans-serif;}
-
-
     </style>
 
 </head>
 <body>
-    <nav class="lg:flex fixed top-0 left-0 w-full lg:relative lg:top-auto lg:left-auto lg:justify-between  items-center max-w-[1920px] py-2 lg:h-[100px] px-1 lg:px-[60px] bg-white drop-shadow">
+    <!-- nav var section  -->
+    <nav class="lg:flex flex flex-col lg:flex-row gap-3 fixed top-0 left-0 w-full lg:relative lg:top-auto lg:left-auto lg:justify-between  items-center max-w-[1920px] py-2 lg:h-[100px] px-1 lg:px-[60px] bg-white drop-shadow">
         <div class="flex justify-center items-center  gap-1 lg:gap-[10px]">
             <img src="./assets/logo.png" alt="" class="h-[50px] w-[50px]">
             <h4 class="text-[#006747] font-bold text-[18px]">Emergency <br> Service</h4>
@@ -52,17 +50,19 @@
             
         </div>
     </nav>
-    <section class=" pt-[145px] pb-5 flex flex-col justify-between items-center text-center gap-2 max-w-[1920px] bg-gradient-to-r from-[#013223] lg:py-5 via-[#006747] to-[#013223] hind-madurai  text-[#FFFFFF]  ">
+    <!-- hero section -->
+    <section class=" pt-[155px] pb-5 flex flex-col justify-between items-center text-center gap-2 max-w-[1920px] bg-gradient-to-r from-[#013223] lg:py-5 via-[#006747] to-[#013223] hind-madurai  text-[#FFFFFF]  ">
         <img src="./assets/logo.png" alt="" class="h-[92px] w-[92px]">
         <h2 class="text-[40px]">জরুরি সেবা ডিরেক্টরি</h2>
         <p class="">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
     </section>
     <!-- card and call history section -->
     <section class="lg:flex px-3 flex lg:flex-row  flex-col-reverse gap-7 lg:max-w-[1800px] mx-auto pt-12 hind-madurai bg-[#DFEFFF]">
+         <!-- all call service-card -->
         <div class="lg:w-3/4  grid grid-cols-1 lg:grid-cols-3 gap-7">
-          <div class=" rounded-xl p-8  gap-4 bg-[#FFFFFF] shadow shadow-[#FFE3E2] ">
+           <div class=" rounded-xl p-8  gap-4 bg-[#FFFFFF] shadow shadow-[#FFE3E2] ">
             <div class="flex justify-between items-center mb-4">
-             <img src="./assets/emergency.png" alt="" class=" bg-[#FFE3E2] w-[60px] h-[60px] rounded-2xl">
+             <div class="p-[14px]  bg-[#FFE3E2] rounded-2xl"><img src="./assets/emergency.png" alt="" class="w-[32px] h-[32px]   "></div>
              <i class="fa-regular fa-heart heart"></i>
             </div>
             <div class="gap-6 service-card">
@@ -80,19 +80,176 @@
               </div>
             </div>
           </div>
-      
-        </div>
+      <div class=" rounded-xl p-8  gap-4 bg-[#FFFFFF] shadow shadow-[#FFE3E2] ">
+            <div class="flex justify-between items-center mb-4">
+             <div class="p-[14px]  bg-[#DFEFFF] rounded-2xl"><img src="./assets/police.png" alt="" class="w-[32px] h-[32px]   "></div>
+             <i class="fa-regular fa-heart heart"></i>
+            </div>
+            <div class="gap-6 service-card">
+              <div>
+                <h4 class="text-2xl font-bold service ">পুলিশ</h4>
+                <p class="text-[#5C5C5C] roboto">Police</p>
+              </div>
+              <div class="my-6">
+                <h4 class="text-2xl font-bold number roboto">999</h4>
+                <p class=" inline-block bg-[#41ff6b1a] py-[6px] px-4 rounded-[50px] text-[#5C5C5C] " >পুলিশ</p>
+            </div>
+            <div class="gap-2 flex w-full">
+              <button  class="btn btn-primary w-1/2 border-1 border-[#D4D6D5] bg-[#FFFFFF] text-[#5C5C5C] rounded-lg copy-btn roboto"> <i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="btn btn-primary w-1/2 bg-[#00A63E] text-white rounded-lg border-none call-button roboto "><i class="fa-solid fa-phone"></i> Call</button>
+              </div>
+            </div>
+          </div>
+      <div class=" rounded-xl p-8  gap-4 bg-[#FFFFFF] shadow shadow-[#FFE3E2] ">
+            <div class="flex justify-between items-center mb-4">
+             <div class="p-[14px]   bg-[#FFE3E2] rounded-2xl"><img src="./assets/fire-service.png" alt="" class="w-[32px] h-[32px]   "></div>
+             <i class="fa-regular fa-heart heart"></i>
+            </div>
+            <div class="gap-6 service-card">
+              <div>
+                <h4 class="text-2xl font-bold service ">ফায়ার সার্ভিস</h4>
+                <p class="text-[#5C5C5C] roboto">Fire Service</p>
+              </div>
+              <div class="my-6">
+                <h4 class="text-2xl font-bold number roboto">999</h4>
+                <p class=" inline-block bg-[#41ff6b1a] py-[6px] px-4 rounded-[50px] text-[#5C5C5C] " >ফায়ার</p>
+            </div>
+            <div class="gap-2 flex w-full">
+              <button  class="btn btn-primary w-1/2 border-1 border-[#D4D6D5] bg-[#FFFFFF] text-[#5C5C5C] rounded-lg copy-btn roboto"> <i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="btn btn-primary w-1/2 bg-[#00A63E] text-white rounded-lg border-none call-button roboto "><i class="fa-solid fa-phone"></i> Call</button>
+              </div>
+            </div>
+          </div>
+         <div class=" rounded-xl p-8  gap-4 bg-[#FFFFFF] shadow shadow-[#FFE3E2] ">
+            <div class="flex justify-between items-center mb-4">
+             <div class="p-[14px]   bg-[#FFE3E2] rounded-2xl"><img src="./assets/ambulance.png" alt="" class="w-[32px] h-[32px]   "></div>
+             <i class="fa-regular fa-heart heart"></i>
+            </div>
+            <div class="gap-6 service-card">
+              <div>
+                <h4 class="text-2xl font-bold service ">অ্যাম্বুলেন্স</h4>
+                <p class="text-[#5C5C5C] roboto">Ambulance</p>
+              </div>
+              <div class="my-6">
+                <h4 class="text-2xl font-bold number roboto">1994-999999</h4>
+                <p class=" inline-block bg-[#41ff6b1a] py-[6px] px-4 rounded-[50px] text-[#5C5C5C] " >স্বাস্থ্য</p>
+            </div>
+            <div class="gap-2 flex w-full">
+              <button  class="btn btn-primary w-1/2 border-1 border-[#D4D6D5] bg-[#FFFFFF] text-[#5C5C5C] rounded-lg copy-btn roboto"> <i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="btn btn-primary w-1/2 bg-[#00A63E] text-white rounded-lg border-none call-button roboto "><i class="fa-solid fa-phone"></i> Call</button>
+              </div>
+            </div>
+          </div>
+      <div class=" rounded-xl p-8  gap-4 bg-[#FFFFFF] shadow shadow-[#FFE3E2] ">
+            <div class="flex justify-between items-center mb-4">
+             <div class="p-[14px]   bg-[#FFE3E2] rounded-2xl"><img src="./assets/emergency.png" alt="" class="w-[32px] h-[32px]   "></div>
+             <i class="fa-regular fa-heart heart"></i>
+            </div>
+            <div class="gap-6 service-card">
+              <div>
+                <h4 class="text-2xl font-bold service ">নারী ও শিশু সহায়তা</h4>
+                <p class="text-[#5C5C5C] roboto">Women & Child Helpline</p>
+              </div>
+              <div class="my-6">
+                <h4 class="text-2xl font-bold number roboto">109</h4>
+                <p class=" inline-block bg-[#41ff6b1a] py-[6px] px-4 rounded-[50px] text-[#5C5C5C] " >সহায়তা</p>
+            </div>
+            <div class="gap-2 flex w-full">
+              <button  class="btn btn-primary w-1/2 border-1 border-[#D4D6D5] bg-[#FFFFFF] text-[#5C5C5C] rounded-lg copy-btn roboto"> <i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="btn btn-primary w-1/2 bg-[#00A63E] text-white rounded-lg border-none call-button roboto "><i class="fa-solid fa-phone"></i> Call</button>
+              </div>
+            </div>
+          </div>
+      <div class=" rounded-xl p-8  gap-4 bg-[#FFFFFF] shadow shadow-[#FFE3E2] ">
+            <div class="flex justify-between items-center mb-4">
+            <div class="p-[14px]   bg-[#FFE3E2] rounded-2xl"><img src="./assets/emergency.png" alt="" class="w-[32px] h-[32px]   "></div>
+             <i class="fa-regular fa-heart heart"></i>
+            </div>
+            <div class="gap-6 service-card">
+              <div>
+                <h4 class="text-2xl font-bold service ">দুদক</h4>
+                <p class="text-[#5C5C5C] roboto">Anti-Corruption</p>
+              </div>
+              <div class="my-6">
+                <h4 class="text-2xl font-bold number roboto">106</h4>
+                <p class=" inline-block bg-[#41ff6b1a] py-[6px] px-4 rounded-[50px] text-[#5C5C5C] " >সরকারি</p>
+            </div>
+            <div class="gap-2 flex w-full">
+              <button  class="btn btn-primary w-1/2 border-1 border-[#D4D6D5] bg-[#FFFFFF] text-[#5C5C5C] rounded-lg copy-btn roboto"> <i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="btn btn-primary w-1/2 bg-[#00A63E] text-white rounded-lg border-none call-button roboto "><i class="fa-solid fa-phone"></i> Call</button>
+              </div>
+            </div>
+          </div>
+      <div class=" rounded-xl p-8  gap-4 bg-[#FFFFFF] shadow shadow-[#FFE3E2] ">
+            <div class="flex justify-between items-center mb-4">
+             <div class="p-[14px]   bg-[#FFE3E2] rounded-2xl"><img src="./assets/emergency.png" alt="" class="w-[32px] h-[32px]   "></div>
+             <i class="fa-regular fa-heart heart"></i>
+            </div>
+            <div class="gap-6 service-card">
+              <div>
+                <h4 class="text-2xl font-bold service ">বিদ্যুৎ বিভ্রাট</h4>
+                <p class="text-[#5C5C5C] roboto">Electricity Outage</p>
+              </div>
+              <div class="my-6">
+                <h4 class="text-2xl font-bold number roboto">16216</h4>
+                <p class=" inline-block bg-[#41ff6b1a] py-[6px] px-4 rounded-[50px] text-[#5C5C5C] " >বিদ্যুৎ</p>
+            </div>
+            <div class="gap-2 flex w-full">
+              <button  class="btn btn-primary w-1/2 border-1 border-[#D4D6D5] bg-[#FFFFFF] text-[#5C5C5C] rounded-lg copy-btn roboto"> <i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="btn btn-primary w-1/2 bg-[#00A63E] text-white rounded-lg border-none call-button roboto "><i class="fa-solid fa-phone"></i> Call</button>
+              </div>
+            </div>
+          </div>
+      <div class=" rounded-xl p-8  gap-4 bg-[#FFFFFF] shadow shadow-[#FFE3E2] ">
+            <div class="flex justify-between items-center mb-4">
+             <div class="p-[14px]   bg-[#FFE3E2] rounded-2xl"><img src="./assets/brac.png" alt="" class="w-[32px] h-[32px]   "></div>
+             <i class="fa-regular fa-heart heart"></i>
+            </div>
+            <div class="gap-6 service-card">
+              <div>
+                <h4 class="text-2xl font-bold service ">ব্র্যাক</h4>
+                <p class="text-[#5C5C5C] roboto">Brac</p>
+              </div>
+              <div class="my-6">
+                <h4 class="text-2xl font-bold number roboto">16445</h4>
+                <p class=" inline-block bg-[#41ff6b1a] py-[6px] px-4 rounded-[50px] text-[#5C5C5C] " >এনজিও</p>
+            </div>
+            <div class="gap-2 flex w-full">
+              <button  class="btn btn-primary w-1/2 border-1 border-[#D4D6D5] bg-[#FFFFFF] text-[#5C5C5C] rounded-lg copy-btn roboto"> <i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="btn btn-primary w-1/2 bg-[#00A63E] text-white rounded-lg border-none call-button roboto "><i class="fa-solid fa-phone"></i> Call</button>
+              </div>
+            </div>
+          </div>
+       <div class=" rounded-xl p-8  gap-4 bg-[#FFFFFF] shadow shadow-[#FFE3E2] ">
+            <div class="flex justify-between items-center mb-4">
+             <div class="p-[14px]   bg-[#FFE3E2] rounded-2xl"><img src="./assets/Bangladesh-Railway.png" alt="" class="w-[32px] h-[32px]   "></div>
+             <i class="fa-regular fa-heart heart"></i>
+            </div>
+            <div class="gap-6 service-card">
+              <div>
+                <h4 class="text-2xl font-bold service ">বাংলাদেশ রেলওয়ে</h4>
+                <p class="text-[#5C5C5C] roboto">Bangladesh Railway</p>
+              </div>
+              <div class="my-6">
+                <h4 class="text-2xl font-bold number roboto">163</h4>
+                <p class=" inline-block bg-[#41ff6b1a] py-[6px] px-4 rounded-[50px] text-[#5C5C5C] " >পরিবহন</p>
+            </div>
+            <div class="gap-2 flex w-full">
+              <button  class="btn btn-primary w-1/2 border-1 border-[#D4D6D5] bg-[#FFFFFF] text-[#5C5C5C] rounded-lg copy-btn roboto"> <i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="btn btn-primary w-1/2 bg-[#00A63E] text-white rounded-lg border-none call-button roboto "><i class="fa-solid fa-phone"></i> Call</button>
+              </div>
+            </div>
+          </div>
+      </div>
+        <!-- call history part -->
         <div class="lg:w-1/4  bg-white p-6 ">
          <div class="flex justify-between items-center mb-4">
             <h5 class="roboto"><i class="fa-regular fa-clock"></i> Call History</h5>
             <button class="btn btn-primary border-none bg-[#00A63E] rounded-[50px] h-[52px] w-[127px] inter " id="clear-btn">Clear</button>
          </div>
          <div id="history" class="flex flex-col gap-2"></div>
-         
-        </div>
+         </div>
     </section>
-
-
-    <script src="./index.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>
