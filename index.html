@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 <body>
-    <nav class="">
-        <div>
-            <img src="" alt="">
+    <nav class="flex  justify-between items-center max-w-[1920px] h-[100px] px-[60px] bg-white drop-shadow">
+        <div class="flex justify-center items-center gap-[10px]">
+            <img src="./assets/logo.png" alt="" class="h-[50px] w-[50px]">
+            <h4 class="text-[#006747] font-bold">Emergency <br> Service</h4>
         </div>
-        <div></div>
+        <div class="flex justify-center items-center gap-5">
+            <div class="flex justify-center items-center gap-[10px]">
+                <h4>0</h4>
+                <img src="./assets/heart.png" alt="" class="h-[30px] w-[30px]">
+            </div>
+            <div class="flex justify-center items-center gap-[10px]">
+                <h4>100</h4>
+                <img src="./assets/coin.png" alt="" class="h-[24px] w-[24px]">
+            </div>
+            <button class="btn btn-primary border-none bg-[#00A63E] rounded-[50px]"><span>0</span> Copy</button>
+        </div>
     </nav>
     
 </body>
