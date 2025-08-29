@@ -58,12 +58,12 @@ target.append(newDiv);
 3. What is **Event Bubbling** and how does it work?
 
 Ans:
-Event Bubbling is a process where an event triggered on a specific child element (or certain child elements) using .addEventListener (or other methods, though so far we’ve only used .addEventListener) gradually propagates up to the parent element, then to the grandparent element, and so on, eventually reaching all ancestor elements.
+Event Bubbling is a process where an event triggered on a specific child element (or certain child elements) using .addEventListener (or other methods) gradually propagates up to the parent element, then to the grandparent element, and so on, eventually reaching all ancestor elements.
 
 We can demonstrate this process using HTML, CSS, and JS.
 
 Example HTML and CSS structure:
-(The elements will move upward after being triggered)
+(The elements will move upward after being triggered) 
 <div id="parent-element">
     <button id="child-element">Click</button>
 </div>
