@@ -36,9 +36,9 @@ for (const call of calls) {
        const history = document.createElement("div")
        history.innerHTML =`
        <div class="flex justify-between items-center bg-[#FAFAFA] p-4 rounded-lg hind-madurai">
-            <div class="">
+            <div>
                 <h4>${service}</h4>
-                <p>${number}</p>
+                <p class="text-[#5C5C5C]">${number}</p>
             </div>
             <div>${date} </div>
          </div>`;
